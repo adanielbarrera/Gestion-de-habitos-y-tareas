@@ -1,0 +1,83 @@
+/* ================= General ================= */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D7D7D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= Tarjetas ================= */
+.card {
+    background: #D7D7D5;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #6D884D, -8px -8px 16px #FFFFFF;
+    padding: 30px;
+    width: 350px;
+}
+
+/* ================= Formularios ================= */
+.form-control {
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 8px #6D884D, inset -4px -4px 8px #FFFFFF;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: inset 4px 4px 8px #88874D, inset -4px -4px 8px #FFFFFF;
+}
+
+/* ================= Botones ================= */
+.btn {
+    border-radius: 20px;
+    background-color: #6D884D;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px #6D884D, -2px -2px 4px #FFFFFF;
+}
+
+/* ================= Links ================= */
+.toggle-link {
+    text-decoration: none;
+    color: #6D884D;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.toggle-link:hover {
+    color: #88874D;
+}
+
+/* ================= Responsividad ================= */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+.card {
+    border-radius: 15px;
+}
+.card-title {
+    font-weight: bold;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
